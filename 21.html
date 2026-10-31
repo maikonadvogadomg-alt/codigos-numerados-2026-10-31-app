@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instalador · Kit do VS Code: dividir e juntar</title>
+<style>
+body{font:18px/1.6 system-ui,Segoe UI,Roboto,sans-serif;background:#f4f2ea;color:#1f2230;margin:0;padding:20px 16px 60px}
+main{max-width:720px;margin:0 auto}
+h1{font-size:28px;line-height:1.2;margin:0 0 6px}
+.mut{color:#5f6372}
+.bt{display:block;width:100%;font:700 20px system-ui,sans-serif;padding:18px;border:0;border-radius:12px;background:#2f7a55;color:#fff;cursor:pointer;margin:18px 0 8px}
+.bt2{background:#fff;color:#1f2230;border:2px solid #1f2230;font-size:17px;padding:12px}
+.caixa{background:#fff;border:1px solid #ddd8c4;border-left:6px solid #8a7b45;border-radius:10px;padding:12px 14px;margin:14px 0}
+ol li{margin:8px 0}
+#st{font-weight:700;min-height:1.6em}
+</style>
+</head>
+<body>
+<main>
+<h1>📦 Kit do VS Code: dividir e juntar</h1>
+<p class="mut">Esta página já traz o projeto inteiro guardado dentro dela (5 KB). Não precisa de internet para salvar.</p>
+<button class="bt" id="baixar">⬇ Salvar o arquivo Kit-VSCode-21-10.zip</button>
+<button class="bt bt2" id="compartilhar" hidden>📤 Enviar (Drive, WhatsApp, e-mail…)</button>
+<p id="st" aria-live="polite"></p>
+<div class="caixa"><b>Manual de instrução</b><ol><li>Salve o zip <b>no computador</b> e extraia. Sai a pasta <b>kit</b> (com o <b>dividir.py</b> e o <b>juntar.py</b>).</li><li>Copie a pasta <b>kit</b> para dentro da pasta do projeto e abra o projeto no VS Code.</li><li>No terminal do VS Code: <b>python kit/dividir.py index.html</b> → <b>cd index-modular</b> → <b>npx serve</b>. Para voltar a um arquivo só: <b>python kit/juntar.py index-modular</b>.</li><li>O passo a passo completo está no <b>Manual do VS Code para modularizar</b>.</li></ol></div>
+<div class="caixa"><b>Se o botão não salvar</b><ul>
+<li>Abra esta página no <b>computador</b>, com dois cliques (abre no Chrome ou Edge), e toque no botão de novo.</li>
+<li>Se o Chrome perguntar, escolha <b>Manter</b>.</li>
+<li>Guarde também ESTA página num pen drive: enquanto você tiver ela, tem o projeto.</li></ul></div>
+</main>
+<script id="dados" type="text/plain">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</script>
+<script>
+(function(){
+  var NOME='Kit-VSCode-21-10.zip', TAM=5131, st=document.getElementById('st');
+  function arquivo(){
+    var b=atob(document.getElementById('dados').textContent.trim()), u=new Uint8Array(b.length);
+    for(var i=0;i<b.length;i++)u[i]=b.charCodeAt(i);
+    if(u.length!==TAM)throw new Error('a página veio incompleta ('+u.length+' de '+TAM+' bytes). Baixe a página de novo.');
+    return new Blob([u],{type:'application/zip'});
+  }
+  document.getElementById('baixar').onclick=function(){
+    try{var b=arquivo(),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=NOME;document.body.appendChild(a);a.click();a.remove();
+      st.textContent='✅ Pronto: '+NOME+' foi para a pasta Downloads (conferido: '+TAM+' bytes).';}
+    catch(e){st.textContent='❌ '+e.message;}
+  };
+  var c=document.getElementById('compartilhar');
+  try{ if(navigator.canShare&&navigator.canShare({files:[new File([new Uint8Array(1)],'t.zip',{type:'application/zip'})]})){c.hidden=false;
+    c.onclick=function(){try{navigator.share({files:[new File([arquivo()],NOME,{type:'application/zip'})],title:NOME}).catch(function(){});}catch(e){st.textContent='❌ '+e.message;}};}}catch(e){}
+})();
+</script>
+</body>
+</html>
